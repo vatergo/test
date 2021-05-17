@@ -23,7 +23,11 @@
             "EAAKtgdq37vcBACbLXngDQ3tuhyKbBg11HRYMEnLHHVd5v1afyiyPrrLixNyc9c5w6zXZAcuTg4jlDkP71yRQSvS3PcQA9Ovc9zbEC9ZChZCmlZC0BNaTCh9uZAq9eIrbzNUvAEj9oKDe1CGqQF0MdHQ0Nd5E7IFxkP1yZBOemTlILPJ5A9uGaOyZCD0eLrYcC9gzIUMKtVklIpNo3RIn4P2",
         },
         function (response) {
-          // Insert your code here
+          if (response.data) {
+            response.data.map((item) =>
+              console.log(`${item["created_time"]} ${item["message"]}`)
+            );
+          }
         }
       );
     };
