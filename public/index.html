@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sashok</title>
+  </head>
+  <body></body>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: "753723185295095",
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: "v10.0",
+      });
+      FB.api(
+        "/vermilonka/published_posts/",
+        "GET",
+        {
+          access_token:
+            "EAAKtgdq37vcBACbLXngDQ3tuhyKbBg11HRYMEnLHHVd5v1afyiyPrrLixNyc9c5w6zXZAcuTg4jlDkP71yRQSvS3PcQA9Ovc9zbEC9ZChZCmlZC0BNaTCh9uZAq9eIrbzNUvAEj9oKDe1CGqQF0MdHQ0Nd5E7IFxkP1yZBOemTlILPJ5A9uGaOyZCD0eLrYcC9gzIUMKtVklIpNo3RIn4P2",
+        },
+        function (response) {
+          // Insert your code here
+        }
+      );
+    };
+  </script>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js"
+  ></script>
+</html>

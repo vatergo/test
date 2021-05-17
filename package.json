@@ -1,0 +1,19 @@
+{
+  "name": "vermilon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sashok",
+    "beliy"
+  ],
+  "author": "unknown",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
